@@ -9,7 +9,7 @@ app.config['MYSQL_DB'] = 'coltis_movie_flask'
 app.config['MYSQL_PORT'] = 3306
 mysql = MySQL(app)
 
-def execute(sqlq: str) -> Cursor:
+def execute(sql: str) -> Cursor:
     cursor = mysql.connection.cursor()
     cursor.execute(sql)
     return cursor

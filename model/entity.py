@@ -6,12 +6,12 @@ class Movie:
         self.year = year
         
 class Review:
-    def __init__(self, name, imail, descripcion, rating, movie_code, id= None) -> None:
+    def __init__(self, name, email, description, rating, code, id= None) -> None:
         self.id = id
         self.name = name
-        self.imail = imail
-        self.descripcion = descripcion
+        self.email = email
+        self.description = description
         self.rating = rating
-        self.movie_code = movie_code
+        self.code = code
 
     
