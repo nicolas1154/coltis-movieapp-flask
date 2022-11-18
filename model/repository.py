@@ -22,6 +22,9 @@ class MovieRepository:
         result = cursor.fetchone()
         cursor.close()
         
+        if result == None:
+            raise Exception(f" La pelicula con el codigo '{code}' no existe ")
+        
         return Movie(
             code=result[0],
             name=result[1],
